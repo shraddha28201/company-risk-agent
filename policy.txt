@@ -1,0 +1,8 @@
+The risk score is a ranking score between 0 and 1. It is not an exact probability of default.
+A risk score below 0.20 means low risk. Routine yearly monitoring is enough.
+A risk score from 0.20 to 0.43 means medium risk. Review the company in the next quarterly cycle.
+A risk score of 0.43 or higher means high risk and the company is flagged. A credit analyst must do a manual review before any decision.
+The model finds about 6 in 10 real defaults, so a low score does not guarantee that a company is safe. Always check the financial statements too.
+If many financial fields are missing, the score is less reliable. Ask for updated financial statements before relying on it.
+The score alone must never be used to approve or reject a company. The final decision is always made by a human.
+When explaining a score, mention the most important financial indicators and avoid claiming that the company will definitely default.
