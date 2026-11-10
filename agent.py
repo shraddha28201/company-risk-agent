@@ -1,6 +1,6 @@
 from google import genai
 from google.genai import types
-
+import os
 from tools import get_company, risk_score, search_policy
 
 MODELS = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
@@ -18,9 +18,13 @@ Rules:
 - Never show internal field names such as missing_fields. Use plain words, for example "6 financial fields are missing".
 - Keep answers short and simple."""
 
-client = genai.Client(api_key=open("key.txt").read().strip())
+def get_key():
+    if os.path.exists("key.txt"):
+        return open("key.txt").read().strip()
+    return os.environ.get("GEMINI_API_KEY", "")
 
 
+client = genai.Client(api_key=get_key())
 # wrappers so that Gemini sees clear names, types and descriptions
 def lookup_company(company_num: int) -> dict:
     """Get the key financial figures of a company, using its company number."""
