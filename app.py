@@ -3,7 +3,7 @@ import streamlit as st
 from agent import run_agent
 
 st.title("Company Risk Assistant")
-st.caption("Built by Shraddha Nimbalkar)
+st.caption("Built by Shraddha Nimbalkar")
 st.caption("Ask about a company number, for example: How risky is company 10? "
            "A human analyst makes the final decision.")
 
