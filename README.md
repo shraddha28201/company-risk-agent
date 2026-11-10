@@ -1,5 +1,5 @@
 # Company Risk Assistant
-
+**Live demo:** https://company-risk-agent-7gwzljfrbw2kwgflgueckd.streamlit.app/
 An AI agent that helps a credit analyst check how risky a company is. It decides by itself which tool to use, gets the facts from the tools, and explains the result in simple words. It never approves or rejects a company: a human analyst makes the final decision.
 
 ## What it does
