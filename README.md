@@ -80,8 +80,8 @@ This is a small test written by me. It checks that the needed tools were called,
 ## How to run
 
 1. Install the libraries: `pip install -r requirements.txt`
-2. Put your dataset in the folder as `Company data.csv`. The data file is not included in this repository.
-3. Create a file named `key.txt` with your own Gemini API key on one line.
+2. The dataset (`Company data.csv`) is included for the demo. It is a public dataset.
+3. 3. Create a file named `key.txt` with your own Gemini API key on one line.
 4. Train the model: `python train_model.py`
 5. Start the app: `python -m streamlit run app.py`
 
@@ -91,4 +91,4 @@ Python, pandas, scikit-learn, Google Gemini API (function calling), Streamlit.
 
 ## Author
 
-shraddha28201
+Shraddha Nimbalkar
