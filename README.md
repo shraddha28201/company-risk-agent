@@ -1,7 +1,7 @@
 # Company Risk Assistant
 **Live demo:** https://company-risk-agent-7gwzljfrbw2kwgflgueckd.streamlit.app
 
-An AI agent that helps a credit analyst check how risky a company is. It decides by itself which tool to use, gets the facts from the tools, and explains the result in simple words. It never approves or rejects a company: a human analyst makes the final decision.
+A Generative AI and Agentic AI project: an AI agent that helps a credit analyst check how risky a company is. It decides by itself which tool to use, gets the facts from the tools, and explains the result in simple words. It never approves or rejects a company: a human analyst makes the final decision.
 
 ## What it does
 
@@ -53,6 +53,8 @@ Results on a held-out test set of 886 companies (61 defaults):
 | Precision (default class) | 0.63 |
 | Recall (default class) | 0.62 |
 
+These numbers come from `train_model.py` in this repository. The notebook in the [Company Default Prediction](https://github.com/shraddha28201/company-default-prediction) repository shows slightly different values because it was run in a different environment.
+
 Accuracy is not used as the main metric because defaults are rare, so a model that predicts "no default" for everyone would already look accurate.
 
 ## Agent testing
@@ -85,10 +87,15 @@ This is a small test written by me. It checks that the needed tools were called,
 4. Train the model: `python train_model.py`
 5. Start the app: `python -m streamlit run app.py`
 
+## Related project
+
+The default-risk model used by this agent is explained in detail here: [Company Default Prediction](https://github.com/shraddha28201/company-default-prediction)
+
 ## Tech
 
-Python, pandas, scikit-learn, Google Gemini API (function calling), Streamlit.
+**Topic:** Generative AI, Agentic AI (tool use and function calling), Machine Learning
 
+**Tools:** Python, pandas, scikit-learn, Google Gemini API, Streamlit, Git/GitHub
 ## Author
 
 Shraddha Nimbalkar
